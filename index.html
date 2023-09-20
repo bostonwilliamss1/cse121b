@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -38,25 +38,7 @@
   <footer>
     &copy;<span id="year"></span> | About Me | CSE 121b
   </footer>
-  <script src="scripts/main.js"></script>
-  <script>
-  let firstname = "Boston";
-  let currentyear = "2023";
-  let profilepicture = "IMG_6618.jpeg";
-
-  const nameElement = document.getElementById('name');
-  const imageElement = document.getElementById('profileimage');
-  const yearElement = document.querySelector('#year');
-  const altText = `Profile image of ${firstname}`;
-  
-  nameElement.innerHTML = `<strong> ${firstname} </strong>`;
-  yearElement.textContent = `${currentyear}`;
-  imageElement.setAttribute('src', profilepicture);
-  imageElement.setAttribute('alt', altText);
-  
-let favoritefoodlist = ["fries", "mashed potatoes", "chips"];
-
-
-</script>
+  <script src="main.js"></script>
+  <script scr="w02-task.js"></script>
 </body>
 </html>
