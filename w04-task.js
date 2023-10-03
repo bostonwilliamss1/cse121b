@@ -61,22 +61,13 @@ myProfile.hobbies.forEach(hobby => {
 });
 
 /* Places Lived DataList */
-myProfile.placesLived.forEach(place => {
-    let dt = document.createElement('dt');
-    dt.textContent = place.place; 
-    document.querySelector('#place').appendChild(dt);
-    
-    let dd = document.createElement('dd');
-    dd.textContent = place.length; 
-    document.querySelector('#length').appendChild(dd);
-});
-
+/* Places Lived DataList */
 myProfile.placesLived.forEach(place => {
     let dt = document.createElement('dt');
     dt.textContent = place.place;
-    document.querySelector('#places-lived').appendChild(dt); 
+    document.querySelector('#places-lived').appendChild(dt);
     
     let dd = document.createElement('dd');
     dd.textContent = place.length;
-    document.querySelector('#places-lived').appendChild(dd); 
+    document.querySelector('#places-lived').appendChild(dd);
 });
