@@ -5,19 +5,16 @@ let myProfile = {
     name: "Boston Williams",
     photo: "IMG_6618.jpeg",
     favoriteFoods: [
-        'Pizza',
-        'Mashed Potatoes',
-        'Chips',
-        'Corn'
-    ],
+        "Pizza",
+        "Mashed Potatoes",
+        "Chips",
+        "Corn"],
     hobbies: [
-        'Soccer',
-        'Piano',
-        'Guitar',
-        'Crochet'
-    ],
+        "Soccer",
+        "Piano",
+        "Guitar",
+        "Crochet"],
     placesLived: []
-
 };
 
 /* Populate Profile Object with placesLive objects */
@@ -60,8 +57,6 @@ myProfile.hobbies.forEach(hobby => {
     document.querySelector('#hobbies').appendChild(ul);
 });
 
-/* Places Lived DataList */
-/* Places Lived DataList */
 myProfile.placesLived.forEach(place => {
     let dt = document.createElement('dt');
     dt.textContent = place.place;
