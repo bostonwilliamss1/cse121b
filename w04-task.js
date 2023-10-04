@@ -29,9 +29,8 @@ myProfile.placesLived.push(
     },
     {
     place: "Los Angeles, California",
-    Length: "2 months"
+    length: "2 months"
     }
-
 )
 
 /* DOM Manipulation - Output */
@@ -40,8 +39,8 @@ myProfile.placesLived.push(
 document.querySelector('#name').textContent = myProfile.name;
 
 /* Photo with attributes */
-document.querySelector('#profileimage').src = myProfile.photo;
-document.getElementById('profileimage').alt = myProfile.name;
+document.querySelector('#photo').src = myProfile.photo;
+document.querySelector('#photo').alt = myProfile.name;
 
 /* Favorite Foods List */
 myProfile.favoriteFoods.forEach(food => {
@@ -52,9 +51,9 @@ myProfile.favoriteFoods.forEach(food => {
 
 /* Hobbies List */
 myProfile.hobbies.forEach(hobby => {
-    let ul = document.createElement('ul');
-    ul.textContent = hobby;
-    document.querySelector('#hobbies').appendChild(ul);
+    let li = document.createElement('li');
+    li.textContent = hobby;
+    document.querySelector('#hobbies').appendChild(li);
 });
 
 myProfile.placesLived.forEach(place => {
