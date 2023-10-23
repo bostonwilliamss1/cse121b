@@ -5,7 +5,7 @@ export function getFacts() {
   const input = document.querySelector("#number").value;
   const card_title = document.querySelector("#card_title");
   const card_text = document.querySelector("#card_text");
-  fetch(`http://numbersapi.com/${input}`)
+  fetch(`https://cors-anywhere.herokuapp.com/http://numbersapi.com/${input}`)
     .then((response) => response.text())
     .then((data) => {
       card_title.innerHTML = input;
