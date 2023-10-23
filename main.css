@@ -77,9 +77,6 @@ h2 {
 
 main {
     margin-top: 125px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
     align-items: center;
     justify-content: center;
 }
